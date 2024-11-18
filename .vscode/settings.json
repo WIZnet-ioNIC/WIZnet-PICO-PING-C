@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "port_common.h": "c",
+        "ping.h": "c"
+    }
+}
