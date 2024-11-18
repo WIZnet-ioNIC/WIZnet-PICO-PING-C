@@ -115,7 +115,7 @@ static wiz_NetInfo net_info =
 };
 ```
 
-3. Setup FTP client configuration in 'ping_client.c' in 'WIZnet-PICO-PING-C/examples/ping_client/' directory.
+3. Setup ping configuration in 'ping_client.c' in 'WIZnet-PICO-PING-C/examples/ping_client/' directory.
 
 ```cpp
 static uint8_t remote_ip[4] = {192, 168, 11, 230};    // The IP to be ping
