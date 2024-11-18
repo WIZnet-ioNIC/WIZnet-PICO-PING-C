@@ -13,7 +13,7 @@ cd [user path]
 cd D:/WIZnet-PICO-PING-C
 
 /* Clone */
-git clone --recurse-submodules https://github.com/wiznetmaker/WIZnet-PICO-PING-C.git
+git clone --recurse-submodules https://github.com/WIZnet-ioNIC/WIZnet-PICO-PING-C.git
 ```
 
 With Visual Studio Code, the library set as a submodule is automatically downloaded, so it doesn't matter whether the library set as a submodule is an empty directory or not, so refer to it.
