@@ -119,7 +119,7 @@ static wiz_NetInfo net_info =
 
 ```cpp
 static uint8_t remote_ip[4] = {192, 168, 11, 230};    // The IP to be ping
-
+```
 
 ## Step 3: Build
 
