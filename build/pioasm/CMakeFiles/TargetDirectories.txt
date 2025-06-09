@@ -1,0 +1,6 @@
+D:/Pico/WIZnet-PICO-PING-C/build/pioasm/CMakeFiles/pioasm.dir
+D:/Pico/WIZnet-PICO-PING-C/build/pioasm/CMakeFiles/edit_cache.dir
+D:/Pico/WIZnet-PICO-PING-C/build/pioasm/CMakeFiles/rebuild_cache.dir
+D:/Pico/WIZnet-PICO-PING-C/build/pioasm/CMakeFiles/list_install_components.dir
+D:/Pico/WIZnet-PICO-PING-C/build/pioasm/CMakeFiles/install.dir
+D:/Pico/WIZnet-PICO-PING-C/build/pioasm/CMakeFiles/install/local.dir

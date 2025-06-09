@@ -7,6 +7,10 @@
 #define BUF_LEN            128
 #define PING_REQUEST       8
 #define PING_REPLY         0
+
+#define PING_REQUEST_V6       0x80
+#define PING_REPLY_V6         0x81
+
 #define CODE_ZERO          0
 
 #define SOCKET_ERROR       1
@@ -19,8 +23,8 @@
 #define TIMEOUT_INT    0x04
 
 
-extern uint8_t req;
-extern uint8_t rep;
+// extern uint8_t req;
+// extern uint8_t rep;
 
 typedef struct pingmsg
 {
@@ -33,9 +37,14 @@ typedef struct pingmsg
 } PINGMSGR;
 
 
+void set_ping_mode_w6x00(uint8_t mode);
+uint8_t check_ping_mode_w6x00(void);
+
 void ping_auto(uint8_t sn, uint8_t* addr);
 uint8_t ping_request(uint8_t sn, uint8_t* addr);
 uint8_t ping_reply(uint8_t s, uint8_t *addr,  uint16_t rlen);
+uint8_t ping_request_v6(uint8_t sn, uint8_t* addr);
+uint8_t ping_reply_v6(uint8_t s, uint8_t *addr,  uint16_t rlen);
 void do_ping(uint8_t sn, uint8_t* ip);
 
 /* By SCOKET-less PING */

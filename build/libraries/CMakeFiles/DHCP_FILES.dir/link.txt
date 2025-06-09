@@ -1,0 +1,2 @@
+C:\PROGRA~2\GNUARM~1\102021~1.10\bin\ARM-NO~2.EXE qc libDHCP_FILES.a CMakeFiles/DHCP_FILES.dir/ioLibrary_Driver/Internet/DHCP/dhcp.c.obj
+C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR17F9~1.EXE libDHCP_FILES.a

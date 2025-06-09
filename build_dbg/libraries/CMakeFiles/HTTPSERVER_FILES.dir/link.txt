@@ -1,0 +1,2 @@
+C:\PROGRA~2\GNUARM~1\102021~1.10\bin\ARM-NO~2.EXE qc libHTTPSERVER_FILES.a CMakeFiles/HTTPSERVER_FILES.dir/ioLibrary_Driver/Internet/httpServer/httpParser.c.obj CMakeFiles/HTTPSERVER_FILES.dir/ioLibrary_Driver/Internet/httpServer/httpServer.c.obj CMakeFiles/HTTPSERVER_FILES.dir/ioLibrary_Driver/Internet/httpServer/httpUtil.c.obj
+C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR17F9~1.EXE libHTTPSERVER_FILES.a

@@ -10,6 +10,7 @@ target_link_libraries(${TARGET_NAME} PRIVATE
         hardware_spi
         ETHERNET_FILES
         IOLIBRARY_FILES
+        PORT_COMMON_FILES
         DHCP_FILES
         PING_FILES
         )
