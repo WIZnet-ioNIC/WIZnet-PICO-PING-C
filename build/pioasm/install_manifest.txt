@@ -1,5 +1,0 @@
-D:/Pico/WIZnet-PICO-PING-C/build/pioasm-install/pioasm/pioasm.exe
-D:/Pico/WIZnet-PICO-PING-C/build/pioasm-install/pioasm/pioasmTargets.cmake
-D:/Pico/WIZnet-PICO-PING-C/build/pioasm-install/pioasm/pioasmTargets-debug.cmake
-D:/Pico/WIZnet-PICO-PING-C/build/pioasm-install/pioasm/pioasmConfig.cmake
-D:/Pico/WIZnet-PICO-PING-C/build/pioasm-install/pioasm/pioasmConfigVersion.cmake

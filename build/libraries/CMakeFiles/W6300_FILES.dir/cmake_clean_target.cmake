@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libW6300_FILES.a"
-)

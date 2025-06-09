@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libTFTP_FILES.a"
-)

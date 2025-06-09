@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libTIMER_FILES.a"
-)

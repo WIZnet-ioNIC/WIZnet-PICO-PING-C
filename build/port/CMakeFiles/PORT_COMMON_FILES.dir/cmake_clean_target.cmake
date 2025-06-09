@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libPORT_COMMON_FILES.a"
-)

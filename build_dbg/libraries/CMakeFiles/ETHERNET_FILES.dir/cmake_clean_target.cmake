@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libETHERNET_FILES.a"
-)

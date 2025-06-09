@@ -1,2 +1,0 @@
-C:\PROGRA~2\GNUARM~1\102021~1.10\bin\ARM-NO~2.EXE qc libETHERNET_FILES.a CMakeFiles/ETHERNET_FILES.dir/ioLibrary_Driver/Ethernet/socket.c.obj CMakeFiles/ETHERNET_FILES.dir/ioLibrary_Driver/Ethernet/wizchip_conf.c.obj CMakeFiles/ETHERNET_FILES.dir/ioLibrary_Driver/Ethernet/W6300/w6300.c.obj
-C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR17F9~1.EXE libETHERNET_FILES.a

@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libSNMP_FILES.a"
-)

@@ -1,5 +1,0 @@
-D:/Pico/WIZnet-PICO-PING-C/build_dbg/_deps/picotool/picotool.exe
-D:/Pico/WIZnet-PICO-PING-C/build_dbg/_deps/picotool/picotoolTargets.cmake
-D:/Pico/WIZnet-PICO-PING-C/build_dbg/_deps/picotool/picotoolTargets-debug.cmake
-D:/Pico/WIZnet-PICO-PING-C/build_dbg/_deps/picotool/picotoolConfig.cmake
-D:/Pico/WIZnet-PICO-PING-C/build_dbg/_deps/picotool/picotoolConfigVersion.cmake
