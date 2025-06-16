@@ -1,4 +1,46 @@
-# WIZnet-PICO-PING-C
+# Getting Started with Ping Examples
+
+These sections will guide you through a series of steps from configuring development environment to running ethernet examples using the **WIZnet's ethernet products**.
+
+- [Getting Started with Ping Examples](#getting-started-with-ping-examples)
+  - [Development environment configuration](#development-environment-configuration)
+  - [Hardware requirements](#hardware-requirements)
+  - [Ping example testing](#ping-example-testing)
+
+<a name="development_environment_configuration"></a>
+## Development environment configuration
+
+To test the ethernet examples, the development environment must be configured to use Raspberry Pi Pico, W5100S-EVB-Pico, W5500-EVB-Pico, W55RP20-EVB-Pico, W6100-EVB-Pico, W6300-EVB-Pico, W5100S-EVB-Pico2, W5500-EVB-Pico2, W6100-EVB-Pico2 or W6300-EVB-Pico2.
+
+These examples were tested after configuring the development environment on **Windows**. Please refer to '**Chapter 3: Installing the Raspberry Pi Pico VS Code Extension**' in the document below and configure accordingly.
+
+- [**Getting started with Raspberry Pi Pico**][link-getting_started_with_raspberry_pi_pico]
+
+**Visual Studio Code** was used during development and testing of ethernet examples, the guide document in each directory was prepared also base on development with Visual Studio Code. Please refer to corresponding document.
+
+
+
+<a name="WIZnet Raspberry Pi Pico Board List"></a>
+## Hardware requirements
+
+The Ethernet examples are compatible with the following Raspberry Pi-compatible WIZnet Ethernet I/O modules. These modules integrate [**WIZnet Ethernet chips**][link-wiznet_ethernet_chips] with either the [**RP2040**][link-rp2040] or [**RP2350**][link-rp2350] microcontrollers.
+
+| Board/Module Name              | MCU      | Ethernet Chip  | Interface     | Socket # | TX/RX Buffer  | Notes                                  |
+|--------------------------------|----------|----------------|---------------|----------|---------------|----------------------------------------|
+| **[WIZnet Ethernet HAT][link-wiznet_ethernet_hat]** |  | W5100S | SPI | 4 | 16KB | RP Pico-compatible |
+| **[W5100S-EVB-Pico][link-w5100s-evb-pico]** | RP2040 | W5100S | SPI | 4 | 16KB |  |
+| **[W5500-EVB-Pico][link-w5500-evb-pico]** | RP2040 | W5500 | SPI | 8 | 32KB |  |
+| **[W55RP20-EVB-Pico][link-w55rp20-evb-pico]** | RP2040 | W5500 | SPI (PIO) | 8 | 32KB | SiP: RP2040 + W5500 |
+| **[W6100-EVB-Pico][link-w6100-evb-pico]** | RP2040 | W6100 | SPI | 8 | 32KB | Supports IPv4/IPv6 |
+| **[W6300-EVB-Pico][link-w6300-evb-pico]** | RP2040 | W6300 | QSPI (PIO) | 8 | 64KB | Supports IPv4/IPv6 |
+| **[W5100S-EVB-Pico2][link-w5100s-evb-pico2]** | RP2350 | W5100S | SPI | 4 | 16KB |  |
+| **[W5500-EVB-Pico2][link-w5500-evb-pico2]** | RP2350 | W5500 | SPI | 8 | 32KB |  |
+| **[W6100-EVB-Pico2][link-w6100-evb-pico2]** | RP2350 | W6100 | SPI | 8 | 32KB | Supports IPv4/IPv6 |
+| **[W6300-EVB-Pico2][link-w6300-evb-pico2]** | RP2350 | W6300 | QSPI (PIO) | 8 | 64KB | Supports IPv4/IPv6 |
+
+
+<a name="ping_example_testing"></a>
+## Ping example testing
  
 1. Download
 
@@ -46,9 +88,7 @@ set(BOARD_NAME W55RP20_EVB_PICO)
 ```
 
 
-
 # How to Test Ping Example
-
 
 ## Step 1: Prepare hardware
 
@@ -66,7 +106,7 @@ If you are using WIZnet's PICO board, you can skip '1. Combine...'
 
 To test the ping example, minor settings shall be done in code.
 
-1. Setup SPI port and pin in 'w5x00_spi.h' in 'WIZnet-PICO-C/port/ioLibrary_Driver/' directory.
+1. Setup SPI port and pin in 'wizchip_spi.h' in 'WIZnet-PICO-C/port/ioLibrary_Driver/' directory.
 
 Setup the SPI interface you use.
 
@@ -230,6 +270,7 @@ uint8_t remote_ip[4] = {192, 168, 11, 4}; // The IP to be ping
 Link
 -->
 
+[link-getting_started_with_raspberry_pi_pico]: https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf
 [link-connect_to_serial_com_port]: https://github.com/WIZnet-ioNIC/WIZnet-PICO-PING-C/blob/main/static/images/ping_client/connect_to_serial_com_port.png
 [link-connect_to_ping_client]: https://github.com/WIZnet-ioNIC/WIZnet-PICO-PING-C/blob/main/static/images/ping_client/connect_to_serial_com_port.png
 [link-time_out_ping]: https://github.com/WIZnet-ioNIC/WIZnet-PICO-PING-C/blob/main/static/images/ping_client/time_out_ping.png
