@@ -18,23 +18,23 @@
 #if (DEVICE_BOARD_NAME == W55RP20_EVB_PICO)
 
 #define USE_PIO
+#define PIN_CS 20
 #define PIN_SCK 21
 #define PIN_MOSI 23
 #define PIN_MISO 22
-#define PIN_CS 20
+#define PIN_INT 24
 #define PIN_RST 25
-#define PIN_IRQ 24
 
 #elif (DEVICE_BOARD_NAME == W6300_EVB_PICO || DEVICE_BOARD_NAME == W6300_EVB_PICO2)
 
 #define USE_PIO
-#define PIO_IRQ_PIN             15
+#define PIN_INT                 15
+#define PIN_CS                  16
 #define PIO_SPI_SCK_PIN         17
 #define PIO_SPI_DATA_IO0_PIN    18
 #define PIO_SPI_DATA_IO1_PIN    19
 #define PIO_SPI_DATA_IO2_PIN    20
 #define PIO_SPI_DATA_IO3_PIN    21
-#define PIN_CS                  16
 #define PIN_RST                 22
 
 #else
@@ -46,19 +46,20 @@
 #define PIN_MISO 16
 #define PIN_CS 17
 #define PIN_RST 20
+#define PIN_INT 21
 
 /* Use SPI DMA */
 //#define USE_SPI_DMA // if you want to use SPI DMA, uncomment.
 #endif
 
 #ifdef USE_PIO    //USING PIO SPI or QSPI
-//     #if _WIZCHIP_SPI_SCLK_SPEED > 44
-//         #define PIO_SCLK 44
-//     #endif
-// #define SYS_CLK 66.5
-// #define TEMP (SYS_CLK / _WIZCHIP_SPI_SCLK_SPEED)
-#define PIO_CLOCK_DIV_MAJOR 4   //((uint8_t)(TEMP))  
-#define PIO_CLOCK_DIV_MINOR 0   //(uint8_t)(256 * (TEMP - PIO_CLOCK_DIV_MAJOR))
+    #if _WIZCHIP_SPI_SCLK_SPEED > 44
+        #define PIO_SCLK 44
+    #endif
+#define SYS_CLK 66.5
+#define TEMP (SYS_CLK / _WIZCHIP_SPI_SCLK_SPEED)
+#define PIO_CLOCK_DIV_MAJOR ((uint8_t)(TEMP))  
+#define PIO_CLOCK_DIV_MINOR (uint8_t)(256 * (TEMP - PIO_CLOCK_DIV_MAJOR))
 
 #else               // NOT USING PIO
     #ifndef _WIZCHIP_SPI_SCLK_SPEED
